@@ -29,6 +29,10 @@ body{
     left: 0;
 }
 
+
+.navbar-mobile{
+    display: none;
+}
 .groupe-lien{
     display: flex;
     gap: 30px;
@@ -69,6 +73,11 @@ body{
     justify-content: space-between;
 
 }
+.col{
+    width: 598.78px;
+    display: flex;
+    flex-direction: column;
+}
 
 .row-section1 div h1{
     color: #204B9B;
@@ -76,16 +85,12 @@ body{
     font-style: normal;
     font-weight: 700;
     line-height: 99.2%;
-    width: 598.78px;
-    height: 132px;
     margin-bottom: 31px;
 }
 .row-section1 div p{
     font-size: 25px;
     color: #171614;
     line-height: auto;
-    width: 576.75px;
-    height: 135PX;
     font-weight: 400;
     margin-bottom: 45px;
 }
@@ -96,6 +101,101 @@ body{
 }
 
 .row-section1 div .col2{
-    margin-right: 28px;
+    margin-right: 38px;
 }
+.section1 .row-section1 .col2 .nav-botton{
+    display: none;
+}
+
+
+
+
 /*début de responsibilité */
+
+@media screen and (max-width: 426px) {
+    .navbar .groupe-lien, .navbar .black{
+        display: none;
+         }
+    .navbar{
+        justify-content: space-between;
+    }
+    .navbar .logo{
+        display: flex;
+        justify-content: end;
+    }
+    .navbar .logo  img{
+        width: 70%;
+    }
+    .nav-icon{
+        display: contents;
+        font-size: 2em;
+        color: #204B9B;
+    }
+    .navbar-desktop{
+        display: none;
+
+    }
+    
+    .navbar-mobile{
+        display: flex;
+    }
+    .section1 .row-section1{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center ;
+    }
+    .section1 .row-section1 .col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .section1 .row-section1 .col h1{
+        text-align: center;
+        font-size: 2.2em;
+        
+    }
+    .section1 .row-section1 .col p{
+        text-align: center;
+        font-size: 1.4em;
+    }
+
+    
+    
+
+    .container {
+        padding: 0px 30px;
+    }
+    .section1{
+        padding-top: 145px;
+    }
+
+    
+    .section1 .row-section1 .col2{
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-botton{
+        display: none;
+    }
+
+    
+
+    .section1 .row-section1 .col2 img{
+        width: 100%;
+        
+    }
+
+    .section1 .row-section1 .col2 .nav-botton{
+        display: flex;
+        margin-top: 40px;
+    }
+
+
+
+        
+}
